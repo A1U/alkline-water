@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+<style>
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+      animation: marquee 10s linear infinite;
+    }
+
+        [x-cloak] { display: none !important; }
+
+  </style>
+
+</head>
+<body>
+         <nav class="overflow-hidden bg-blue-500 text-white     px-4 py-4 h-10 md:flex md:items-center md:justify-between">
+
+ <div class="">
+    <p class="inline-block animate-marquee text-lg font-semibold px-4">
+      🚀 This is a running text scrolling from right to left using Tailwind CSS and custom animation! 🚀
+    </p>
+  </div>
+
+   
+  </nav>
+
+
+
+ <nav class="bg-gray-500  bg-sky-500/100 px-4 py-4 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-xl font-semibold text-gray-700"> <a href="/" class="block">
+        <img 
+          src="../assets/lo.png" 
+          alt="Logo"          
+          class="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 object-contain m-2"
+        />
+      </a></span>
+      <button id="menu-btn" class="text-gray-700 md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="mt-4 md:mt-0 md:flex hidden flex-col md:flex-row md:items-center text-center text-4px">
+      <a href="../index.html" class="block px-2 py-1 text-white hover:text-blue-600">HOME</a>
+      <a href="../pages/about.html" class="block px-2 py-1 text-white hover:text-blue-600">ABOUT US </a>
+      <a href="#" class="block px-2 py-1 text-white hover:text-blue-600">SERVICES</a>
+
+      <a href="../pages/patient.html" class="block px-2 py-1 text-white hover:text-blue-600">PATIENT STORIES</a>
+      <a href="../pages/camp.html" class="block px-2 py-1 text-white hover:text-blue-600">CAMP</a>
+      <a href="../pages/contact.html" class="block px-2 py-1 text-white hover:text-blue-600">CONTACT</a>
+    </div>
+  </nav>
+<!-- Slider -->
+<div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('../assets/yoga.jpg');">
+  <div class="absolute inset-0  bg-opacity-50"></div>
+
+  <!-- Centered Text -->
+  <div class="relative z-10 flex items-center justify-center h-full text-center px-6">
+    <div class="text-black">
+              <h1 class="text-4xl md:text-6xl font-bold mb-4"> </h1>
+              <h2 class="text-black-600 text 2xl: font-extrabold ">Naturopathy & Alkaline Water Therapy
+
+              </h2>
+
+      <p class="text-4xl md:text-6xl font-bold mb-4">Natural Wellness Journey</p>
+      
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 mt-10">
+
+  <!-- Section 1 -->
+  <section class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">🧘 Purified High-pH Water</h2>
+      <p class="text-gray-700 leading-relaxed">
+Begin your journey toward vibrant health and balance with one of nature’s most powerful allies — alkaline water. At the heart of holistic living, alkaline water supports your 
+body’s natural detoxification processes, enhances hydration, and helps restore internal harmony   
+Your body works hard to maintain a slightly alkaline pH, especially in the blood. When your system becomes too acidic — often due to processed foods, stress, and environmental
+ toxins — it can lead to fatigue, inflammation, and disease.
+<br>
+
+✅ Balance your body’s pH levels<br>
+
+✅ Enhance hydration (its smaller water molecules are more easily absorbed)<br>
+
+✅ Flush out toxins naturally<br>
+
+✅ Support better digestion and metabolism<br>
+
+✅ Promote clearer skin and higher energy levels<br>
+   </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2 ">
+      <img src="../assets/as1.jpg" alt="Wellness Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="flex flex-col items-center md:items-start gap-8 md:flex-row-reverse">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">🌿 Wellness through Nature</h2>
+      <p class="text-gray-700 leading-relaxed">
+In a fast-paced world full of synthetic solutions and quick fixes, true healing often comes from returning to the basics—nature, balance, and mindful living. At the heart of holistic health is the belief that the body has an innate ability 
+to heal itself when given the right support. This is the essence of Wellness Through Nature.  
+Wellness Through Nature” is a lifestyle and healing philosophy that draws on the power of natural elements—plants, water, air, sunlight, and whole foods—to promote physical, emotional, and spiritual well-being. It's about choosing natural, gentle, and sustainable approaches to
+ health rather than harsh chemicals or invasive treatments. 
+   </p>
+   
+
+</div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="../assets/s1.jpg" alt="Healing Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 mt-10">
+
+  <!-- Section 1 -->
+  <section class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">💧 Body-Balancing Water</h2>
+      <p class="text-gray-700 leading-relaxed">
+In the search for better energy, improved digestion, and long-term wellness, sometimes the most powerful solution is the simplest: water. But not just any water—Body-Balancing Water is specially formulated to support 
+your body’s natural pH, detox processes, and overall vitality.   
+Body-Balancing Water is clean, mineral-enriched water with a naturally elevated pH level. It helps neutralize acidity in the body, replenish essential minerals, and promote optimal hydration. Unlike ordinary water, 
+it’s designed to work with your body, not just quench your thirst.
+
+
+</p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2 ">
+      <img src="../assets/h1.jpg" alt="Wellness Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="flex flex-col items-center md:items-start gap-8 md:flex-row-reverse">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">🌍 Earth-Based Wellness</h2>
+      <p class="text-gray-700 leading-relaxed">
+In a world filled with fast fixes and synthetic solutions, true healing is found in slowing down and returning to the source—Earth. Earth-Based Wellness is a holistic path to health that honors the rhythms of nature, the wisdom of traditional healing, and the deep connection between your body, mind, and the natural world.
+
+Earth-Based Wellness is a lifestyle and healing philosophy rooted in the belief that nature provides everything we need to nourish, heal, and thrive. It draws on ancient wisdom and modern science to restore balance using natural methods and sustainable practices.
+
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="../assets/a13.jpg" alt="Healing Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+</div>
+
+
+
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 mt-10">
+
+  <!-- Section 1 -->
+  <section class="flex flex-col md:flex-row items-center md:items-start gap-8">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">Mineral-Enriched Water</h2>
+      <p class="text-gray-700 leading-relaxed">
+Hydration is essential to life—but not all water is created equal. At [Your Center or Brand Name], we offer Mineral-Enriched Water, carefully crafted to support your body’s natural balance, energy,
+ and vitality. More than just hydration, it’s functional nourishment from the inside out.      
+   
+Mineral-Enriched Water is water that has been infused with essential minerals your body needs to function at its best—such as calcium, magnesium, potassium, and trace elements. These minerals not only enhance hydration but also support core physiological functions like bone health, nerve signaling, and muscle recovery.
+
+Unlike distilled or overly purified water, which can be stripped of nutrients, our mineral water delivers balanced hydration with benefits.
+      </p>
+    </div>
+    <!-- Image -->
+    <div class="md:w-1/2 ">
+      <img src="../assets/t1.jpg" alt="Wellness Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="flex flex-col items-center md:items-start gap-8 md:flex-row-reverse">
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">Natural Therapeutics</h2>
+      <p class="text-gray-700 leading-relaxed">
+
+
+        At a time when many are seeking alternatives to pharmaceuticals and invasive treatments, Natural
+         Therapeutics offers a safe, effective, and holistic path to healing. Rooted in centuries of traditional 
+         wisdom and supported by modern science, natural therapeutics focuses on 
+        restoring health through nature-based methods that work in harmony with the body.
+        Natural Therapeutics is a system of healing that uses natural substances and therapies to stimulate the body's
+         own healing processes. Instead of suppressing symptoms, it addresses the root 
+        causes of illness and imbalance, supporting long-term wellness.
+
+</p>
+
+</div>
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="../assets/r1.jpg" alt="Healing Image" class="w-full rounded-lg shadow-md object-cover">
+    </div>
+  </section>
+
+</div>
+
+
+
+
+<!-- ===============================================================footer============================================== -->
+
+ 
+
+<div class="bg-gray-100 mt-10">
+
+
+     <!-- Footer -->
+  <footer class="bg-gray-500 text-white px-6 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Column 1 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">COMPANY</h2>
+ an integrated healthcare provider dedicated to delivering comprehensive, patient-centered medical services. With a focus on both treatment and prevention, we aim to address the root causes of illnes
+ s while offering accessible, high-quality care to individuals and families.      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SERVICES</h2>
+        <ul class="space-y-2">
+           <li><a href="../index.html" class="hover:underline text-sm">HOME</a></li>
+
+          <li><a href="#" class="hover:underline text-sm">ABOUT US</a></li>
+          <li><a href="../pages/service.html" class="hover:underline text-sm">SERVICES</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SUPPORT</h2>
+        <ul class="space-y-2">
+          <li><a href="../pages/patient.html" class="hover:underline text-sm">PATIENT STORIES</a></li>
+          <li><a href="../pages/camp.html" class="hover:underline text-sm">CAMP</a></li>
+          <li><a href="../pages/contact.html" class="hover:underline text-sm">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">CONTACT</h2>
+        <ul class="space-y-2 text-sm">
+          <li>Email: support@example.com</li>
+          <li>Phone:xxxxxxxxxx</li>
+          <li>Address: 123 Main St, City</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+       <div class="mt-10 text-center text-sm text-gray-400">
+
+  <!-- Social Icons centered -->
+  <div class="flex justify-center space-x-4 mt-4">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/your-number" target="_blank" class="text-green-500 text-5xl hover:text-green-600">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourpage" target="_blank" class="text-blue-600 text-5xl hover:text-blue-700">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 text-5xl hover:text-blue-600">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+
+</div>
+  </footer>
+
+
+
+
+
+</div>
+
+</body>
+</html>

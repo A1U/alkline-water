@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+           <link rel="stylesheet" href="../output.css">
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+<style>
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+      animation: marquee 10s linear infinite;
+    }
+  </style>
+    
+
+</head>
+<body>
+
+     <nav class="overflow-hidden bg-blue-500  text-white  border-b  px-4 py-4 h-10 md:flex md:items-center md:justify-between">
+
+ <div class="">
+    <p class="inline-block animate-marquee text-lg font-semibold px-4">
+      🚀 This is a running text scrolling from right to left using Tailwind CSS and custom animation! 🚀
+    </p>
+  </div>
+
+   
+  </nav>
+
+
+
+ <nav class="bg-gray-500 border-b border-gray-200 bg-sky-500/100 px-4 py-4 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-xl font-semibold text-gray-700"> <a href="/" class="block">
+        <img 
+          src="../assets/lo.png" 
+          alt="Logo" 
+          class="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 object-contain m-2"
+        />
+      </a></span>
+      <button id="menu-btn" class="text-gray-700 md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="mt-4 md:mt-0 md:flex hidden flex-col md:flex-row md:items-center text-center text-4px">
+      <a href="../index.html" class="block px-2 py-1 text-white hover:text-blue-600">HOME</a>
+      <a href="../pages/about.html" class="block px-2 py-1 text-white hover:text-blue-600">ABOUT  </a>
+      <a href="../pages/service.html" class="block px-2 py-1 text-white hover:text-blue-600">SERVICES</a>
+
+      <a href="#" class="block px-2 py-1 text-white hover:text-blue-600">PATIENT STORIES</a>
+
+      <a href="../pages/camp.html" class="block px-2 py-1 text-white hover:text-blue-600">CAPM</a>
+      <a href="../pages/contact.html" class="block px-2 py-1 text-white hover:text-blue-600">CONTACT</a>
+    </div>
+  </nav>
+  <div>
+    <div class="h-screen  bg-cover bg-center bg-no-repeat w-full "  alt="Clear Image"  style="background-image: url('../assets/bg.jpg');">
+    <div class="flex items-center justify-center h-full bg-opacity-50">
+      <h1 class="text-black text-4xl font-bold"> Story of Reassurance (Emotional, General Medicine)</h1>
+      
+    </div>
+  </div>
+  </div>
+
+
+<!-- <a href="../component/Footer.html">nbvgfdxtfhvg</a> -->
+
+
+<div class="m-2 sm:m-4 md:m-6 lg:m-10 bg-gray-100 p-4 rounded">
+  <h2 class="text-lg font-bold text-center"> Patient Testimonials</h2>
+</div>
+
+<div class="px-4 py-8">
+  <!-- First Row -->
+  <div class="flex flex-wrap justify-center gap-6 mb-8">
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p3.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p1.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p2.jpg" alt="Image 3" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="flex flex-wrap justify-center gap-6">
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p4.jpg" alt="Image 4" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p6.jpg" alt="Image 5" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+    <div class="w-full sm:w-1/2 md:w-1/4">
+      <img src="../assets/p5.jpg" alt="Image 6" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="flex flex-wrap justify-center gap-6 ">
+  
+  <!-- Card 1 -->
+  <div class="w-full md:w-1/4 bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold text-blue-700 mb-2">Hospital & Institute of Integrated Medical Sciences </h3>
+    <p class="text-gray-600">
+As an integrated hospital, we are committed to delivering exceptional care by addressing the root causes of illness. Our goal is to make high-quality, accessible healthcare available to 
+all, delivered with compassion by dedicated medical professionals.
+ </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full md:w-1/3 bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold text-blue-700 mb-2">About Us</h3>
+    <p class="text-gray-600">
+About versant Group 
+
+Blog
+
+Terms Of Use
+
+Shop  
+
+Our hospital works together across departments to treat not just the symptoms, but the real causes of illness. We aim to give 
+everyone access to good, affordable care from kind and caring doctors.
+At our hospital, we focus on more than just treating symptoms—we work to find and fix the root causes of illness. 
+Our caring doctors and medical 
+staff are here to provide quality care that’s easy to access for everyone in the community.
+
+</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full md:w-1/3 bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold text-blue-700 mb-2">Main Branch versant GROUP</h3>
+    <p class="text-gray-600">
+We believe that true healing begins by understanding what’s really causing illness. That’s why our hospital combines advanced care with a 
+personal touch, offering accessible, high-quality treatment from medical professionals who genuinely care
+      <h1 class="font-extrabold text-blue-700">Newsletter Subscribe</h1>
+      <div class="px-4 py-6">
+     Email Address
+  </label>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Enter your email"
+    class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+  />
+  <br><br>
+  <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+  Submit
+</button>
+
+</div>
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-gray-100 mt-10">
+
+
+     <!-- Footer -->
+  <footer class="bg-gray-500 text-white px-6 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Column 1 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">COMPANY</h2>
+ an integrated healthcare provider dedicated to delivering comprehensive, patient-centered medical services. With a focus on both treatment and prevention, we aim to address the root causes of illnes
+ s while offering accessible, high-quality care to individuals and families.      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SERVICES</h2>
+        <ul class="space-y-2">
+           <li><a href="../index.html" class="hover:underline text-sm">HOME</a></li>
+
+          <li><a href="../pages/about.html" class="hover:underline text-sm">ABOUT US</a></li>
+          <li><a href="../pages/service.html" class="hover:underline text-sm">SERVICES</a></li>
+          <li><a href="../pages/products.html" class="hover:underline text-sm">PRODUCT</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SUPPORT</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline text-sm">PATIENT STORIES</a></li>
+          <li><a href="../pages/camp.html" class="hover:underline text-sm">CAMP</a></li>
+          <li><a href="../pages/contact.html" class="hover:underline text-sm">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">CONTACT</h2>
+        <ul class="space-y-2 text-sm">
+          <li>Email: support@example.com</li>
+          <li>Phone: +xxxxxxxxxxxx</li>
+          <li>Address: 123 Main St, City</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+   <div class="mt-10 text-center text-sm text-gray-400">
+
+  <!-- Social Icons centered -->
+  <div class="flex justify-center space-x-4 mt-4">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/your-number" target="_blank" class="text-green-500 text-5xl hover:text-green-600">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourpage" target="_blank" class="text-blue-600 text-5xl hover:text-blue-700">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 text-5xl hover:text-blue-600">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+
+</div>
+
+  </footer>
+
+
+
+
+
+</div>
+
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+    
+</body>
+</html>

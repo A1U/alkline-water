@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../output.css">
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+<style>
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+      animation: marquee 10s linear infinite;
+    }
+
+
+
+    
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 5s linear infinite;
+  }
+
+
+
+
+  </style>
+    
+
+</head>
+<body>
+
+     <nav class="overflow-hidden bg-blue-500 text-white   border-b  px-4 py-4 h-10 md:flex md:items-center md:justify-between">
+
+ <div class="">
+    <p class="inline-block animate-marquee text-lg font-semibold px-4">
+      🚀 This is a running text scrolling from right to left using Tailwind CSS and custom animation! 🚀
+    </p>
+  </div>
+
+   
+  </nav>
+
+
+
+ <nav class="bg-gray-500 border-b border-gray-200 px-4 py-4 md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-xl font-semibold text-gray-700">
+          <a href="/" class="block">
+        <img 
+          src="../assets/lo.png" 
+          alt="Logo" 
+          class="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 object-contain m-2"
+        />
+      </a>
+      </span>
+      <button id="menu-btn" class="text-gray-700 md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="mt-4 md:mt-0 md:flex hidden flex-col md:flex-row md:items-center text-center text-4px">
+      <a href="../index.html" class="block px-2 py-1 text-white hover:text-blue-600">HOME</a>
+      <a href="../pages/about.html" class="block px-2 py-1 text-white hover:text-blue-600">ABOUT  </a>
+      <a href="../pages/service.html" class="block px-2 py-1 text-white hover:text-blue-600">SERVICES</a>
+      <a href="../pages/patient.html" class="block px-2 py-1 text-white hover:text-blue-600">PATIENT STORIES</a>
+      <a href="#" class="block px-2 py-1 text-white hover:text-blue-600">CAMP</a>
+      <a href="../pages/contact.html" class="block px-2 py-1 text-white hover:text-blue-600">CONTACT</a>
+    </div>
+  </nav>
+  
+    
+
+
+
+
+
+
+
+
+
+<div class="flex">
+  <div class="w-1/2">
+    <img src="../assets/u2.jpg" alt="Image 1" class="w-full h-auto block opacity-50">
+  </div>
+  <div class="w-1/2">
+    <img src="../assets/v5.jpg" alt="Image 2" class="w-full h-auto block">
+  </div>
+</div>
+
+
+
+
+<div class="flex flex-col md:flex-row flex-wrap justify-center gap-6 px-4 py-6">
+
+  <!-- Select State -->
+  <div class="w-full md:w-1/4">
+    <!-- <label class="block text-gray-700 font-medium mb-2" for="state">Select a State</label> -->
+    <select id="state" required
+      class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">-- Choose a State --</option>
+      <option value="punjab">Punjab</option>
+      <option value="delhi">Delhi</option>
+      <option value="haryana">Haryana</option>
+    </select>
+  </div>
+
+  <!-- Select City -->
+  <div class="w-full md:w-1/4">
+    <!-- <label class="block text-gray-700 font-medium mb-2" for="city">Select a City</label> -->
+    <select id="city" required
+      class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">-- Choose a City --</option>
+      <option value="amritsar">Amritsar</option>
+      <option value="ludhiana">Ludhiana</option>
+      <option value="chandigarh">Chandigarh</option>
+    </select>
+  </div>
+
+  <!-- Search Field -->
+  <div class="w-full md:w-1/4 flex items-end">
+    <div class="flex w-full">
+      <input 
+        type="text" 
+        placeholder="Search..." 
+        class="w-full px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button 
+        type="submit" 
+        class="bg-blue-600 text-white px-5 py-3 rounded-r-md hover:bg-blue-700 transition"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<div>
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">
+ UPCOMING CAMPS
+</h2>
+
+    <p class="text-center text-gray-670 text-1xl font-normal mt-2">
+
+
+Jeena Sikho Lifecare is committed to making wellness accessible to all. Explore our upcoming health
+ check-up camps happening throughout the month at various Shuddhi HiiMS locations near you!
+
+</p>
+
+</div>
+
+
+<!-- ===========================================card section ====================================== -->
+
+
+<div class="relative overflow-hidden w-full bg-white py-6">
+  <!-- Scrolling wrapper -->
+  <div class="flex animate-scroll space-x-6 w-max">
+    <!-- Repeat images (for loop effect) -->
+  
+    <img src="../assets/15.jpg" class="h-80 w-full rounded shadow-md" alt="Image 4" />
+    <img src="../assets/15.jpg" class="h-80 w-fullrounded shadow-md" alt="Image 5" />
+    <img src="../assets/15.jpg" class="h-80 w-full rounded shadow-md" alt="Image 6" />
+
+    <!-- Repeat to loop smoothly -->
+    
+    <img src="../assets/15.jpg" class="h-80 w-full rounded shadow-md" alt="Image 4" />
+    <img src="../assets/15.jpg" class="h-80 w-fullrounded shadow-md" alt="Image 5" />
+    <img src="../assets/15.jpg" class="h-80 w-full rounded shadow-md" alt="Image 6" />
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<!-- ========================footer============================================ -->
+
+
+
+
+<div class="bg-gray-100 mt-10">
+
+
+     <!-- Footer -->
+  <footer class="bg-gray-500 text-white px-6 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Column 1 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">COMPANY</h2>
+ an integrated healthcare provider dedicated to delivering comprehensive, patient-centered medical services. With a focus on both treatment and prevention, we aim to address the root causes of illnes
+ s while offering accessible, high-quality care to individuals and families.      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SERVICES</h2>
+        <ul class="space-y-2">
+           <li><a href="../index.html" class="hover:underline text-sm">HOME</a></li>
+
+          <li><a href="../pages/about.html" class="hover:underline text-sm">ABOUT US</a></li>
+          <li><a href="../pages/service.html" class="hover:underline text-sm">SERVICES</a></li>
+          <li><a href="../pages/products.html" class="hover:underline text-sm">PRODUCT</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">SUPPORT</h2>
+        <ul class="space-y-2">
+          <li><a href="../pages/patient.html" class="hover:underline text-sm">PATIENT STORIES</a></li>
+          <li><a href="#" class="hover:underline text-sm">CAMP</a></li>
+          <li><a href="../pages/contact.html" class="hover:underline text-sm">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h2 class="font-semibold text-lg mb-4">CONTACT</h2>
+        <ul class="space-y-2 text-sm">
+          <li>Email: support@example.com</li>
+          <li>Phone: +xxxxxxxxx</li>
+          <li>Address: 123 Main St, City</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+      <div class="mt-10 text-center text-sm text-gray-400">
+
+  <!-- Social Icons centered -->
+  <div class="flex justify-center space-x-4 mt-4">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/your-number" target="_blank" class="text-green-500 text-5xl hover:text-green-600">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourpage" target="_blank" class="text-blue-600 text-5xl hover:text-blue-700">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 text-5xl hover:text-blue-600">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+
+</div>
+  </footer>
+
+
+
+
+
+</div>
+
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+
+
+
+
+  </script>
+    
+</body>
+</html>
